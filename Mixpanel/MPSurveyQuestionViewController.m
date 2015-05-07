@@ -221,6 +221,10 @@ typedef NS_ENUM(NSInteger, MPSurveyTableViewCellPosition) {
 
 @implementation MPSurveyMultipleChoiceQuestionViewController
 
+// Since question is declared as a different class in superclass MPSurveyQuestionViewController,
+// indicate dynamic to use parent accessors.
+@dynamic question;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -328,6 +332,10 @@ typedef NS_ENUM(NSInteger, MPSurveyTableViewCellPosition) {
 @end
 
 @implementation MPSurveyTextQuestionViewController
+
+// Since question is declared as a different class in superclass MPSurveyQuestionViewController,
+// indicate dynamic to use parent accessors.
+@dynamic question;
 
 - (void)viewDidLoad
 {
